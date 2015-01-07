@@ -1,0 +1,6 @@
+// Info stylesheet: styles for info column on layout
+// -------------------------------------------------------
+#basics, #details {
+	@extend .small-12;
+	@extend .medium-6;
+}
