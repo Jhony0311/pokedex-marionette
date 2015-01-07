@@ -1,0 +1,33 @@
+{
+  "name": "pokedex-marionette",
+  "version": "1.0.0",
+  "authors": [
+    "Jonathan Ortega <jonathan.ortega@modop.com>"
+  ],
+  "description": "A pokedex built in Backbone.js with Marionette.js",
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "keywords": [
+    "Backbone.js",
+    "Marionette",
+    "JS",
+    "JavaScript",
+    "Pokedex",
+    "Pokemon"
+  ],
+  "license": "GNUv2",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "~3.2.0",
+    "foundation": "~5.5.0"
+  }
+}

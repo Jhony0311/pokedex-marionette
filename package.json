@@ -1,0 +1,22 @@
+{
+  "name": "pokedex-marionette",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Pokedex built in Backbone.js with Marionette.js",
+  "scripts": {
+    "start": "grunt"
+  },
+  "author": "Jonathan Ortega <jortega0389@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer-core": "^4.0.2",
+    "csswring": "^2.0.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-open": "^0.2.3",
+    "grunt-postcss": "^0.2.0",
+    "grunt-sass": "^0.17.0"
+  }
+}

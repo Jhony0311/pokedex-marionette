@@ -1,0 +1,37 @@
+// Text stylesheet: all text global styles and font face 
+// declarations for all site
+// -------------------------------------------------------
+
+@font-face {
+    font-family: 'candalregular';
+    src: url('../fonts/candal-webfont.eot');
+    src: url('../fonts/candal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/candal-webfont.woff2') format('woff2'),
+         url('../fonts/candal-webfont.woff') format('woff'),
+         url('../fonts/candal-webfont.ttf') format('truetype'),
+         url('../fonts/candal-webfont.svg#candalregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ambleregular';
+    src: url('../fonts/amble-regular-webfont.eot');
+    src: url('../fonts/amble-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/amble-regular-webfont.woff2') format('woff2'),
+         url('../fonts/amble-regular-webfont.woff') format('woff'),
+         url('../fonts/amble-regular-webfont.ttf') format('truetype'),
+         url('../fonts/amble-regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $candal;
+}
+
+p {
+    font-family: $amble;
+}

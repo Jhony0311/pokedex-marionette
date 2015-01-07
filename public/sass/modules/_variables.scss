@@ -1,0 +1,90 @@
+// 
+// Pokemon Types stylesheet: Color patterns and some 
+// generic styles for pokemon types markup
+// -------------------------------------------------------
+
+// Colors
+// -------------------------------------------------------
+
+$red: #C0392B;
+$white: #FFFFFF;
+$black: #000000;
+$blue: #5A71FB;
+$gray: #616161;
+
+
+// Fonts
+// -------------------------------------------------------
+
+$candal: 'candalregular';
+$amble: 'ambleregular';
+
+
+// OCSS Classes and mixins
+// -------------------------------------------------------
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.vertical {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.overfl {
+    overflow: hidden !important;
+}

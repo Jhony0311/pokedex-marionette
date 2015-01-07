@@ -1,0 +1,41 @@
+// -------------------------------------------------------
+// Main stylesheet, have every partial, mixing and vendor scss for this project
+// 
+// Naming convention:                                                           
+// Variables, functions, mixins names goes all in lowercase and spaced with 
+// dash                                                                         
+// 
+// Style order:                                                                 
+// The order of rules for each style block will be alphabetic ascending, can be 
+// done easily with F9 in Sublime Text.
+// 
+// We should not have more than 6 levels nested selectors just to avoid madness 
+// with code mantaining
+// 
+// Folder structure:
+// vendor/ is for CSS related to some JavaScript libraries
+// modules/ is for mixins, variables and utilities (such as icons)
+// patterns/ is for global styles, buttons, and forms
+// components/ is for groups of patterns with small bits of layout
+// layouts/ is where page layouts go and any page-specific changes to patterns
+// and components. 
+// -------------------------------------------------------
+
+// 
+// Modules stylesheets: mixins, variables and utilities 
+// -------------------------------------------------------
+@import 'modules/variables';
+@import 'modules/mixins';
+@import 'modules/texts';
+
+
+// 
+// Patterns stylesheets: group of styles and components
+// -------------------------------------------------------
+@import 'patterns/globals';
+@import 'patterns/pokemonTypes';
+
+
+// 
+// Layouts stylesheets: group of patterns in a view
+// -------------------------------------------------------
