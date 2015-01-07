@@ -2,7 +2,7 @@
   "name": "pokedex-marionette",
   "version": "1.0.0",
   "authors": [
-    "Jonathan Ortega <jonathan.ortega@modop.com>"
+    "Jonathan Ortega <jortega0389@gmail.com>"
   ],
   "description": "A pokedex built in Backbone.js with Marionette.js",
   "moduleType": [
@@ -28,6 +28,7 @@
   ],
   "dependencies": {
     "animate.css": "~3.2.0",
-    "foundation": "~5.5.0"
+    "foundation": "~5.5.0",
+    "marionette": "~2.3.0"
   }
 }

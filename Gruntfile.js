@@ -26,6 +26,12 @@ module.exports = function (grunt) {
             src: 'public/sass/main.scss'
           },
         ],
+        options: {
+          includePaths: [
+            'bower_components/animate.css/source/',
+            'bower_components/foundation/scss/',
+          ]
+        }
       },
     },
     postcss: {
@@ -34,7 +40,8 @@ module.exports = function (grunt) {
         processors: [
           require('autoprefixer-core')({browsers: 'last 2 version'}).postcss,
           require('csswring').postcss
-        ]
+        ],
+        outputStyle: 'nested',
       },
       dist: {
         src: 'public/styles/main.css',
