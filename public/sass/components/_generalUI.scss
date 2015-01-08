@@ -1,0 +1,22 @@
+.content {
+	padding: 1em;
+}
+
+#list {
+	background: $white;
+	@extend .radius;
+	@extend .small-12;
+	@extend .medium-3;
+}
+
+#details {
+	@extend .small-12;
+	@extend .medium-9;
+}
+
+.box {
+	padding-top: .9375rem;
+	padding-bottom: .9375rem;
+	@extend .columns;
+	@extend .small-12;
+}

@@ -29,7 +29,7 @@
 @import 'modules/texts';
 
 // 
-// Patterns stylesheets: group of styles and components
+// Vendor stylesheets: all vendor stylesheets
 // -------------------------------------------------------
 @import 'foundation';
 @import 'animate.css';
@@ -41,8 +41,13 @@
 @import 'patterns/globals';
 @import 'patterns/pokemonTypes';
 
+// 
+// Components stylesheets: is for groups of patterns with small bits of layout
+// -------------------------------------------------------
+@import 'components/generalUI';
+
 
 // 
 // Layouts stylesheets: group of patterns in a view
 // -------------------------------------------------------
-@import 'layouts/info';
+@import 'layouts/list';
