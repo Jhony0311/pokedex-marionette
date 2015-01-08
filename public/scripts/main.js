@@ -2,29 +2,41 @@
 'use strict';
 
 require.config({
-	baseUrl: 'scripts/',
-	paths: {
-		jquery: 'libs/jquery.min',
-		backbone: 'libs/backbone.min',
-		underscore: 'libs/underscore.min',
-		marionette: 'libs/marionette',
-		babysitter: 'libs/backbone.babysitter',
-		wreqr: 'libs/backbone.wreqr',
-		handlebars: 'libs/handlebars',
-	},
-	shim: {
-		marionette: {
-			deps: ['babysitter', 'wreqr', 'backbone']
-		}
-	}
+    baseUrl: 'scripts/',
+    paths: {
+        underscore: '../bower_components/underscore/underscore',
+        backbone: '../bower_components/backbone/backbone',
+        marionette: '../bower_components/marionette/lib/backbone.marionette.min',
+        wreqr: '../bower_components/backbone.wreqr/lib/backbone.wreqr',
+        babysitter: '../bower_components/backbone.babysitter/lib/backbone.babysitter',
+        handlebars: '../bower_components/handlebars.min',
+        jquery: '../bower_components/jquery/dist/jquery',
+        text: '../bower_components/text/text',
+    },
+    shim: {
+        underscore: {
+            exports: '_',
+        },
+        backbone: {
+            exports: 'Backbone',
+            deps: ['jquery', 'underscore'],
+        },
+        marionette: {
+            exports: 'Marionette',
+            deps: ['backbone'],
+        }
+    }
 });
 
 require([
-	'jquery',
-	'underscore',
-	'backbone',
-	'app',
-	'models/UserModel'
-], function ($, _, Backbone, AppRouter, UserModel) {
-	
+    'app',
+    'backbone',
+    'routers/index',
+    'controllers/index',
+], function (app, Backbone, Router, Controller) {
+    app.start();
+    new Router({
+        controller: Controller
+    });
+    Backbone.history.start();
 });

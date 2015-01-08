@@ -28,8 +28,8 @@ module.exports = function (grunt) {
         ],
         options: {
           includePaths: [
-            'bower_components/animate.css/source/',
-            'bower_components/foundation/scss/',
+            'public/bower_components/animate.css/source/',
+            'public/bower_components/foundation/scss/',
           ]
         }
       },
