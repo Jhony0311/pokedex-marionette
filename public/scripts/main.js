@@ -25,7 +25,8 @@ require.config({
             exports: 'Marionette',
             deps: ['backbone'],
         }
-    }
+    },
+    deps: ['jquery', 'underscore']
 });
 
 require([
@@ -34,9 +35,18 @@ require([
     'routers/index',
     'controllers/index',
 ], function (app, Backbone, Router, Controller) {
+
     app.start();
-    new Router({
+
+    var R = Marionette.AppRouter.extend({
+        appRoutes: {
+            '': 'default'
+        }
+    });
+    
+    var router = new R({
         controller: Controller
     });
+
     Backbone.history.start();
 });

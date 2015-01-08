@@ -6,12 +6,14 @@ define([
     // 'views/Details',
 ], function (Marionette, Pokemons) {
     'use strict';
-    var pokemons = new Pokemons();
+    // console.log(Pokemons);
+    // var pokemons = new Pokemons();
 
     var app = new Marionette.Application();
 
     app.addInitializer(function(){
-        pokemons.fetch();
+        // pokemons.fetch();
     });
     
+    return window.app = app;
 });
