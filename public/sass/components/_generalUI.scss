@@ -19,3 +19,7 @@
 	@extend .columns;
 	@extend .small-12;
 }
+
+.logo {
+	@include sprite($tw-icon);
+}

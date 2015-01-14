@@ -1,0 +1,136 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$fb-icon-hover-name: 'fb-icon-hover';
+$fb-icon-hover-x: 0px;
+$fb-icon-hover-y: 0px;
+$fb-icon-hover-offset-x: 0px;
+$fb-icon-hover-offset-y: 0px;
+$fb-icon-hover-width: 30px;
+$fb-icon-hover-height: 30px;
+$fb-icon-hover-total-width: 90px;
+$fb-icon-hover-total-height: 60px;
+$fb-icon-hover-image: '../../img/spritesheet.png';
+$fb-icon-hover: 0px 0px 0px 0px 30px 30px 90px 60px '../../img/spritesheet.png' 'fb-icon-hover';
+$fb-icon-name: 'fb-icon';
+$fb-icon-x: 30px;
+$fb-icon-y: 0px;
+$fb-icon-offset-x: -30px;
+$fb-icon-offset-y: 0px;
+$fb-icon-width: 30px;
+$fb-icon-height: 30px;
+$fb-icon-total-width: 90px;
+$fb-icon-total-height: 60px;
+$fb-icon-image: '../../img/spritesheet.png';
+$fb-icon: 30px 0px -30px 0px 30px 30px 90px 60px '../../img/spritesheet.png' 'fb-icon';
+$ig-icon-hover-name: 'ig-icon-hover';
+$ig-icon-hover-x: 0px;
+$ig-icon-hover-y: 30px;
+$ig-icon-hover-offset-x: 0px;
+$ig-icon-hover-offset-y: -30px;
+$ig-icon-hover-width: 30px;
+$ig-icon-hover-height: 30px;
+$ig-icon-hover-total-width: 90px;
+$ig-icon-hover-total-height: 60px;
+$ig-icon-hover-image: '../../img/spritesheet.png';
+$ig-icon-hover: 0px 30px 0px -30px 30px 30px 90px 60px '../../img/spritesheet.png' 'ig-icon-hover';
+$ig-icon-name: 'ig-icon';
+$ig-icon-x: 30px;
+$ig-icon-y: 30px;
+$ig-icon-offset-x: -30px;
+$ig-icon-offset-y: -30px;
+$ig-icon-width: 30px;
+$ig-icon-height: 30px;
+$ig-icon-total-width: 90px;
+$ig-icon-total-height: 60px;
+$ig-icon-image: '../../img/spritesheet.png';
+$ig-icon: 30px 30px -30px -30px 30px 30px 90px 60px '../../img/spritesheet.png' 'ig-icon';
+$tw-icon-hover-name: 'tw-icon-hover';
+$tw-icon-hover-x: 60px;
+$tw-icon-hover-y: 0px;
+$tw-icon-hover-offset-x: -60px;
+$tw-icon-hover-offset-y: 0px;
+$tw-icon-hover-width: 30px;
+$tw-icon-hover-height: 30px;
+$tw-icon-hover-total-width: 90px;
+$tw-icon-hover-total-height: 60px;
+$tw-icon-hover-image: '../../img/spritesheet.png';
+$tw-icon-hover: 60px 0px -60px 0px 30px 30px 90px 60px '../../img/spritesheet.png' 'tw-icon-hover';
+$tw-icon-name: 'tw-icon';
+$tw-icon-x: 60px;
+$tw-icon-y: 30px;
+$tw-icon-offset-x: -60px;
+$tw-icon-offset-y: -30px;
+$tw-icon-width: 30px;
+$tw-icon-height: 30px;
+$tw-icon-total-width: 90px;
+$tw-icon-total-height: 60px;
+$tw-icon-image: '../../img/spritesheet.png';
+$tw-icon: 60px 30px -60px -30px 30px 30px 90px 60px '../../img/spritesheet.png' 'tw-icon';
+$spritesheet-width: 90px;
+$spritesheet-height: 60px;
+$spritesheet-image: '../../img/spritesheet.png';
+$spritesheet-sprites: $fb-icon-hover $fb-icon $ig-icon-hover $ig-icon $tw-icon-hover $tw-icon;
+$spritesheet: 90px 60px '../../img/spritesheet.png' $spritesheet-sprites;
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
