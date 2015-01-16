@@ -6,7 +6,7 @@ define([
         url: 'http://pokeapi.co/api/v1/pokedex/1/',
         model: pokemon,
         parse: function(data) {
-        	return data.pokemon;
+            return data.pokemon;
         }
     });
     

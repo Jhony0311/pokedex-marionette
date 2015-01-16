@@ -25,6 +25,10 @@ define([
             types: [],
             weight: "",
         },
+        initialize: function() {
+            // console.log(this.get('url'));
+            // this.fetch();
+        },
         getSprite: function() {
             
         },
@@ -32,7 +36,7 @@ define([
 
         },
         parse: function(data) {
-            console.log(data);
+            this.set({'url': data.resource_uri});
             return data;
         }
     });
