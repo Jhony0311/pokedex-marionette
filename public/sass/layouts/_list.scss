@@ -24,6 +24,7 @@
 		padding: 0.3em;
 		border: 1px solid $light-gray;
 		border-bottom: 0;
+		position: relative;
 
 		.number {
 			font-weight: bold;
@@ -46,6 +47,15 @@
 			margin: 0 0.15em;
 			vertical-align: middle;
 			@extend .inline-block;
+		}
+
+		.types {
+			right: 0.5em;
+			position: absolute;
+			top: 1.7em;
+			vertical-align: middle;
+			@extend .inline-block;
+			/* Refer to pokemonTypes stylesheet to color styling*/
 		}
 	}
 }

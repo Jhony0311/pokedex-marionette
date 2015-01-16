@@ -9,6 +9,7 @@
 }
 
 #details {
+	max-height: 38.143em;
 	@extend .small-12;
 	@extend .medium-9;
 }
@@ -18,8 +19,4 @@
 	padding-bottom: .9375rem;
 	@extend .columns;
 	@extend .small-12;
-}
-
-.logo {
-	@include sprite($tw-icon);
 }

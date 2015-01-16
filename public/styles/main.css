@@ -1,4 +1,3 @@
-@import url(animate.css);
 .right {
   float: right; }
 
@@ -33,7 +32,7 @@
 .inline {
   display: inline; }
 
-.inline-block, #complete-list .element .number, #complete-list .element .name, #complete-list .element .thumb {
+.inline-block, #complete-list .element .number, #complete-list .element .name, #complete-list .element .thumb, #complete-list .element .types {
   display: inline-block; }
 
 .hidden {
@@ -6111,6 +6110,13 @@ header {
 footer {
   text-align: center; }
 
+.itype {
+  padding: 0.2em 0.3em;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 0.2em;
+  border-radius: 10% !important; }
+
 .type-normal {
   background-color: #a8a878;
   border: solid 1px #6d6d4e; }
@@ -6189,15 +6195,12 @@ footer {
 #list {
   background: #FFFFFF; }
 
+#details {
+  max-height: 38.143em; }
+
 .box {
   padding-top: 0.9375rem;
   padding-bottom: 0.9375rem; }
-
-.logo {
-  background-image: url(../../img/spritesheet.png);
-  background-position: -60px -30px;
-  width: 30px;
-  height: 30px; }
 
 .search-box {
   width: 100%; }
@@ -6216,7 +6219,8 @@ footer {
   #complete-list .element {
     padding: 0.3em;
     border: 1px solid #cccccc;
-    border-bottom: 0; }
+    border-bottom: 0;
+    position: relative; }
     #complete-list .element .number {
       font-weight: bold;
       font-size: 1.1em;
@@ -6231,3 +6235,9 @@ footer {
       height: 96px;
       margin: 0 0.15em;
       vertical-align: middle; }
+    #complete-list .element .types {
+      right: 0.5em;
+      position: absolute;
+      top: 1.7em;
+      vertical-align: middle;
+      /* Refer to pokemonTypes stylesheet to color styling*/ }

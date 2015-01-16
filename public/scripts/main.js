@@ -36,17 +36,11 @@ require([
     'controllers/index',
 ], function (app, Backbone, Router, Controller) {
 
+    //Start app: excecute on start function
     app.start();
 
-    var R = Marionette.AppRouter.extend({
-        appRoutes: {
-            '': 'default'
-        }
-    });
-    
-    var router = new R({
-        controller: Controller
-    });
+    //Initiate the router with the controller
+    new Router({controller: Controller });
 
-    Backbone.history.start();
+    // Backbone.history.start();
 });

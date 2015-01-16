@@ -33,7 +33,7 @@
 // Vendor stylesheets: all vendor stylesheets
 // -------------------------------------------------------
 @import 'foundation';
-@import 'animate.css';
+// @import 'animate.css';
 
 
 // 
@@ -52,3 +52,4 @@
 // Layouts stylesheets: group of patterns in a view
 // -------------------------------------------------------
 @import 'layouts/list';
+@import 'layouts/details';

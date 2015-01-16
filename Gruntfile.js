@@ -78,7 +78,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-open');
   
-    grunt.registerTask('default', ['compile-sass', 'connect', 'open:server', 'watch' ]);
+    grunt.registerTask('default', ['compile-sass', 'connect', 'open:server', 'watch']);
     grunt.registerTask('compile-sass', ['sprite', 'sass', 'autoprefixer']);
 
 };
