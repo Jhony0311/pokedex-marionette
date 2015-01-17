@@ -1,9 +1,8 @@
-<li class="element">
-    <div class="number">{{id}}</div>
-    <div class="thumb {{sprites}}"></div>
-    <div class="name">{{name}}</div>
-    <div class="types">
-        <div class="itype type-normal">type</div>
-        <div class="itype type-fire">type</div>
-    </div>
-</li>
+<div class="number">{{id}}</div>
+<div class="thumb {{sprites}}"></div>
+<div class="name">{{name}}</div>
+<div class="types">
+    {{#each type}}
+        <div class="itype type-{{this}}">{{this}}</div>
+    {{/each}}
+</div>

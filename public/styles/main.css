@@ -26,7 +26,7 @@
 .clear {
   clear: both; }
 
-.pointer {
+.pointer, #complete-list .element {
   cursor: pointer; }
 
 .inline {
@@ -6208,7 +6208,7 @@ footer {
     width: 100%; }
 
 #complete-list {
-  max-height: 40.685em;
+  max-height: 34.873em;
   overflow-y: auto; }
   #complete-list ul {
     list-style: none;

@@ -1,15 +1,27 @@
 define([
     'marionette',
+    'handlebars',
     'views/itemList',
     'text!templates/listSectionTemplate.hbs',
-], function (Marionette, ChildView, template) {
+], function (Marionette, Handlebars, ChildView, template) {
     'use strict';
     
-    var view = Marionette.CollectionView.extend({
-        template: template,
+    var view = Marionette.CompositeView.extend({
+        className: 'row',
+        template: Handlebars.compile(template),
         childView: ChildView,
-        onBeforeShow: function(){
-            console.log('before show list');
+        childViewContainer: 'ul',
+        ui: {
+            'pokemon': '.element',
+            'search': 'input',
+        },
+        events: {
+            'keypress @ui.search': 'filterSearch'
+        },
+        filterSearch: function(e) {
+            if(e.currentTarget.value.lenght >= 3) {
+                console.log('filtering');
+            }
         }
     });
     

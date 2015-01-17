@@ -10,7 +10,7 @@
 }
 
 #complete-list {
-	max-height: 40.685em;
+	max-height: 34.873em;
 	overflow-y: auto;
 
 	ul {
@@ -20,11 +20,13 @@
 		width: 100%;
 		border-bottom: 1px solid $light-gray;
 	}
+
 	.element {
 		padding: 0.3em;
 		border: 1px solid $light-gray;
 		border-bottom: 0;
 		position: relative;
+		@extend .pointer;
 
 		.number {
 			font-weight: bold;

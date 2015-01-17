@@ -9,7 +9,7 @@ require.config({
         marionette: '../bower_components/marionette/lib/backbone.marionette.min',
         wreqr: '../bower_components/backbone.wreqr/lib/backbone.wreqr',
         babysitter: '../bower_components/backbone.babysitter/lib/backbone.babysitter',
-        handlebars: '../bower_components/handlebars.min',
+        handlebars: '../bower_components/handlebars/handlebars.min',
         jquery: '../bower_components/jquery/dist/jquery',
         text: '../bower_components/text/text',
     },

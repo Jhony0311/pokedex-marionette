@@ -1,12 +1,14 @@
 define([
     'marionette',
+    'handlebars',
     'text!templates/ItemListTemplate.hbs',
-], function (Marionette, template) {
+], function (Marionette, Handlebars, template) {
     'use strict';
     
     var view = Marionette.ItemView.extend({
-    	// el: 'ul',
-        template: template
+    	tagName: 'li',
+    	className: 'element',
+        template: Handlebars.compile(template),
     });
     
     return view;
