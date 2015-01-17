@@ -3,12 +3,13 @@ define([
 ], function (pokemon) {
     'use strict';
     var Pokemons = Backbone.Collection.extend({
-        url: 'http://pokeapi.co/api/v1/pokedex/1/',
+        url: 'media/pokemons.json',
         model: pokemon,
         parse: function(data) {
-            return data.pokemon;
+            // console.log(data);
+            return data;
         }
     });
     
-    return Pokemons;
+    return new Pokemons();
 });

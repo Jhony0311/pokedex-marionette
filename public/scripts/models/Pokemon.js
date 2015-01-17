@@ -26,17 +26,11 @@ define([
             weight: "",
         },
         initialize: function() {
-            // console.log(this.get('url'));
-            // this.fetch();
-        },
-        getSprite: function() {
-            
-        },
-        getDescription: function() {
-
+            // console.log(this.get('sprites'));
         },
         parse: function(data) {
-            this.set({'url': data.resource_uri});
+            data.sprites = 'poke' + data.id;
+            
             return data;
         }
     });

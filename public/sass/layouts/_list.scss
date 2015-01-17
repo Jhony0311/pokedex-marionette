@@ -10,7 +10,7 @@
 }
 
 #complete-list {
-	max-height: 38.143em;
+	max-height: 40.685em;
 	overflow-y: auto;
 
 	ul {
@@ -30,7 +30,7 @@
 			font-weight: bold;
 			font-size: 1.1em;
 			vertical-align: middle;
-			margin-left: 1em;
+			margin-left: 0.3em;
 			@extend .inline-block;
 		}
 
@@ -42,17 +42,20 @@
 
 		.thumb {
 			background-image: url(http://img.pokemondb.net/sprites/black-white/montage-rby.png);
-			width: 96px;
-			height: 96px;
+			width: 40px;
+			height: 30px;
 			margin: 0 0.15em;
 			vertical-align: middle;
 			@extend .inline-block;
 		}
 
+		@include sprites($spritesheet-sprites);
+
 		.types {
-			right: 0.5em;
+			right: 0.7em;
 			position: absolute;
-			top: 1.7em;
+			font-size: 0.6em;
+			top: 0.3em;
 			vertical-align: middle;
 			@extend .inline-block;
 			/* Refer to pokemonTypes stylesheet to color styling*/

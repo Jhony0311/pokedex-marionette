@@ -6208,7 +6208,7 @@ footer {
     width: 100%; }
 
 #complete-list {
-  max-height: 38.143em;
+  max-height: 40.685em;
   overflow-y: auto; }
   #complete-list ul {
     list-style: none;
@@ -6225,19 +6225,775 @@ footer {
       font-weight: bold;
       font-size: 1.1em;
       vertical-align: middle;
-      margin-left: 1em; }
+      margin-left: 0.3em; }
     #complete-list .element .name {
       font-size: 1em;
       vertical-align: middle; }
     #complete-list .element .thumb {
       background-image: url(http://img.pokemondb.net/sprites/black-white/montage-rby.png);
-      width: 96px;
-      height: 96px;
+      width: 40px;
+      height: 30px;
       margin: 0 0.15em;
       vertical-align: middle; }
+    #complete-list .element .poke001 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -40px 0px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke002 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -120px -270px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke003 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: 0px -30px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke004 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -40px -30px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke005 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -80px 0px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke006 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -80px -30px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke007 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: 0px -60px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke008 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -40px -60px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke009 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -80px -60px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke010 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: 0px -90px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke011 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -40px -90px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke012 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -80px -90px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke013 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -120px 0px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke014 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -120px -30px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke016 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -120px -60px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke017 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -120px -90px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke018 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: 0px -120px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke019 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -40px -120px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke020 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -80px -120px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke021 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -120px -120px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke022 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -160px 0px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke023 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -160px -30px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke024 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -160px -60px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke025 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -160px -90px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke026 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -160px -120px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke027 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: 0px -150px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke028 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -40px -150px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke029 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -80px -150px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke030 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -120px -150px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke031 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -160px -150px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke032 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -200px 0px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke033 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -200px -30px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke034 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -200px -60px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke035 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -200px -90px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke036 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -200px -120px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke037 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -200px -150px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke038 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: 0px -180px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke039 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -40px -180px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke040 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -80px -180px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke041 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -120px -180px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke042 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -160px -180px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke043 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -200px -180px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke044 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: 0px -210px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke045 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -40px -210px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke046 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -80px -210px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke047 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -120px -210px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke048 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -160px -210px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke049 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -200px -210px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke050 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -240px 0px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke051 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -240px -30px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke052 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -240px -60px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke053 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -240px -90px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke054 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -240px -120px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke055 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -240px -150px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke056 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -240px -180px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke057 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -240px -210px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke058 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: 0px -240px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke059 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -40px -240px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke060 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -80px -240px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke061 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -120px -240px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke062 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -160px -240px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke063 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -200px -240px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke064 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -240px -240px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke065 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -280px 0px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke066 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -280px -30px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke067 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -280px -60px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke068 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -280px -90px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke069 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -280px -120px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke070 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -280px -150px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke071 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -280px -180px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke072 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -280px -210px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke073 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -280px -240px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke074 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: 0px -270px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke075 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -40px -270px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke076 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -80px -270px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke077 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: 0px 0px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke078 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -160px -270px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke079 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -200px -270px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke080 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -240px -270px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke081 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -280px -270px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke082 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -320px 0px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke083 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -320px -30px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke084 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -320px -60px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke085 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -320px -90px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke086 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -320px -120px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke087 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -320px -150px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke088 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -320px -180px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke089 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -320px -210px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke090 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -320px -240px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke091 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -320px -270px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke092 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: 0px -300px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke093 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -40px -300px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke094 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -80px -300px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke095 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -120px -300px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke096 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -160px -300px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke097 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -200px -300px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke098 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -240px -300px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke099 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -280px -300px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke100 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -320px -300px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke101 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: 0px -330px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke102 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -40px -330px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke103 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -80px -330px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke104 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -120px -330px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke105 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -160px -330px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke106 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -200px -330px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke107 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -240px -330px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke108 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -280px -330px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke109 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -320px -330px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke110 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -360px 0px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke111 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -360px -30px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke112 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -360px -60px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke113 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -360px -90px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke114 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -360px -120px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke115 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -360px -150px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke116 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -360px -180px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke117 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -360px -210px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke118 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -360px -240px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke119 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -360px -270px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke120 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -360px -300px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke121 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -360px -330px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke122 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: 0px -360px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke123 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -40px -360px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke124 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -80px -360px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke125 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -120px -360px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke126 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -160px -360px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke127 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -200px -360px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke128 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -240px -360px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke129 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -280px -360px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke130 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -320px -360px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke131 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -360px -360px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke132 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -400px 0px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke133 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -400px -30px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke134 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -400px -60px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke135 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -400px -90px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke136 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -400px -120px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke137 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -400px -150px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke138 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -400px -180px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke139 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -400px -210px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke140 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -400px -240px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke141 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -400px -270px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke142 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -400px -300px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke143 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -400px -330px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke144 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -400px -360px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke145 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: 0px -390px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke146 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -40px -390px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke147 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -80px -390px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke148 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -120px -390px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke149 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -160px -390px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke15 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -200px -390px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke150 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -240px -390px;
+      width: 40px;
+      height: 30px; }
+    #complete-list .element .poke151 {
+      background-image: url(../../img/spritesheet.png);
+      background-position: -280px -390px;
+      width: 40px;
+      height: 30px; }
     #complete-list .element .types {
-      right: 0.5em;
+      right: 0.7em;
       position: absolute;
-      top: 1.7em;
+      font-size: 0.6em;
+      top: 0.3em;
       vertical-align: middle;
       /* Refer to pokemonTypes stylesheet to color styling*/ }

@@ -63,6 +63,10 @@ module.exports = function (grunt) {
             html: {
                 files: [buildConfig.app + '/**/*.html', buildConfig.app + '/**/*.hbs'],
             },
+            sprites: {
+                files: [buildConfig.app + '/img/sprites/*.png'],
+                tasks: ['sprite'],
+            },
             options: {
                 livereload: true,
                 events: ['all'],

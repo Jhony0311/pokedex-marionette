@@ -2,17 +2,15 @@ define([
     'marionette',
     'collections/Pokemons',
     'views/MainLayout',
-    // 'views/List',
-    // 'views/Details',
 ], function (Marionette, Pokemons, MainLayout) {
     'use strict';
     // console.log(Pokemons);
-    var pokemons = new Pokemons();
 
     var app = new Marionette.Application();
+    var mainView;
 
     app.addInitializer(function(){
-        pokemons.fetch();
+        Pokemons.fetch({remove: false});
     });
 
     app.on('start', function(){
@@ -20,7 +18,7 @@ define([
             Backbone.history.start();
         }
 
-        new MainLayout().render();
+        mainView = new MainLayout().render();
 
     });
     
