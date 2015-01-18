@@ -16,12 +16,26 @@ define([
             'search': 'input',
         },
         events: {
-            'keypress @ui.search': 'filterSearch'
+            'keyup @ui.search': 'filterSearch'
+        },
+        collectionEvents: {
+            'filter': 'refresh'
         },
         filterSearch: function(e) {
-            if(e.currentTarget.value.lenght >= 3) {
-                console.log('filtering');
+            // console.log(e.currentTarget.value.lenght);
+            if(e.currentTarget.value.length >= 3) {
+                // console.log('filtering');
+                var filtered = this.collection.filter(function(model) {
+                    var reg = new RegExp(e.currentTarget.value, 'i');
+                    var name = model.get('name');
+                   return reg.test(name);                    
+                });
+
+                // console.log(filtered);
             }
+        },
+        refresh: function() {
+            console.log('refresh');
         }
     });
     
