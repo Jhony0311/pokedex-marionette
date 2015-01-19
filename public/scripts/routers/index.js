@@ -1,11 +1,11 @@
 define([
     'marionette'
 ], function (Marionette) {
-	'use strict';
+    'use strict';
 
     return Marionette.AppRouter.extend({
         appRoutes: {
-            
+            'view/id': 'visualize',
         }
     });
 });

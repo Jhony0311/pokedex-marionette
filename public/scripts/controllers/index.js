@@ -4,6 +4,8 @@ define([
     'use strict';
 
     return {
-        
+        visualize: function(params) {
+            console.log(params);
+        },
     };
 });

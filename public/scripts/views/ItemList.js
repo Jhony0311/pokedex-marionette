@@ -2,15 +2,18 @@ define([
     'marionette',
     'handlebars',
     'text!templates/ItemListTemplate.hbs',
-], function (Marionette, Handlebars, template) {
-    'use strict';
-    
-    var view = Marionette.ItemView.extend({
-    	tagName: 'li',
-    	className: 'element',
-        template: Handlebars.compile(template),
-        modelEvents: {
+    ], function (Marionette, Handlebars, template) {
+        'use strict';
+        
+        var view = Marionette.ItemView.extend({
+           tagName: 'li',
+           className: 'element',
+           template: Handlebars.compile(template),
+           modelEvents: {
             'change:filter': 'onFilter',
+        },
+        events: {
+            'click': 'navigateTo'
         },
         onFilter: function() {
             var that = this;
@@ -24,8 +27,11 @@ define([
                 this.$el.removeClass('animated fadeOutDown');
                 this.$el.addClass('animated fadeInUp');
             }
+        },
+        navigateTo: function() {
+            console.log('navigate to ' + this.model.get('id'));
         }
     });
-    
-    return view;
-});
+        
+        return view;
+    });

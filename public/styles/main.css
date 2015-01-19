@@ -6211,7 +6211,8 @@ footer {
 
 #complete-list {
   max-height: 34.873em;
-  overflow-y: auto; }
+  overflow-y: auto;
+  border: 1px solid #cccccc; }
   @media only screen and (min-width:64.063em) {
     #complete-list {
       min-height: 34.873em; } }
@@ -6219,12 +6220,10 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 100%;
-    border-bottom: 1px solid #cccccc; }
+    width: 100%; }
   #complete-list .element {
     padding: 0.3em;
     border: 1px solid #cccccc;
-    border-bottom: 0;
     position: relative;
     transition: all ease 1s; }
     #complete-list .element .number {
@@ -6236,7 +6235,6 @@ footer {
       font-size: 1em;
       vertical-align: middle; }
     #complete-list .element .thumb {
-      background-image: url(http://img.pokemondb.net/sprites/black-white/montage-rby.png);
       width: 40px;
       height: 30px;
       margin: 0 0.15em;
