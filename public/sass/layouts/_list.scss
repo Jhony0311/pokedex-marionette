@@ -13,6 +13,10 @@
 	max-height: 34.873em;
 	overflow-y: auto;
 
+	@media #{$large-up} {
+		min-height: 34.873em;	
+	}
+
 	ul {
 		list-style: none;
 		padding: 0;
@@ -26,6 +30,7 @@
 		border: 1px solid $light-gray;
 		border-bottom: 0;
 		position: relative;
+		transition: all ease 1s;
 		@extend .pointer;
 
 		.number {

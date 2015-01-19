@@ -40,7 +40,6 @@ module.exports = function (grunt) {
                 ],
                 options: {
                     includePaths: [
-                        buildConfig.app + '/bower_components/animate.css/source/',
                         buildConfig.app + '/bower_components/foundation/scss/',
                     ]
                 }

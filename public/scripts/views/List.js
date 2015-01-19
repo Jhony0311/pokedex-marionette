@@ -28,10 +28,18 @@ define([
                 var filtered = this.collection.filter(function(model) {
                     var reg = new RegExp(e.currentTarget.value, 'i');
                     var name = model.get('name');
-                   return reg.test(name);                    
+                    if (reg.test(name)) {
+                        model.set('filter', false);
+                        return true;
+                    } else {
+                        model.set('filter', true);
+                        return false;
+                    }
                 });
-
-                // console.log(filtered);
+            } else {
+                this.collection.each(function(model) {
+                    model.set('filter', false);
+                });
             }
         },
         refresh: function() {

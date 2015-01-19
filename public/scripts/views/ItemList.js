@@ -13,7 +13,17 @@ define([
             'change:filter': 'onFilter',
         },
         onFilter: function() {
-            console.log(this.get('name') + ' no visible');
+            var that = this;
+            this.$el.removeClass('hide');
+            if (this.model.get('filter')){
+                this.$el.addClass('animated fadeOutDown');
+                this.$el.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                    that.$el.addClass('hide');
+                });
+            } else {
+                this.$el.removeClass('animated fadeOutDown');
+                this.$el.addClass('animated fadeInUp');
+            }
         }
     });
     

@@ -12,6 +12,7 @@ define([
             descriptions: [],
             description: "",
             evolutions: [],
+            filter: false,
             happiness: 0,
             height: "",
             hp: 0,
