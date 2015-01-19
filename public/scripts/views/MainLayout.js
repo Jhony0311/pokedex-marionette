@@ -19,6 +19,9 @@ define([
             this.getRegion('list').show(new ListView({
                 collection: Pokemons
             }));
+        },
+        onFilterSearch: function(collection) {
+            console.log('filter');
         }
     });
 
