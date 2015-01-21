@@ -9,8 +9,11 @@ define([
     var app = new Marionette.Application();
     var mainView;
 
-    app.addInitializer(function(){
+    app.addInitializer(function() {
         Pokemons.fetch({remove: false});
+        app.vent.on('showDetails', function(model) {
+            console.log(model);
+        });
     });
 
     app.on('start', function(){

@@ -29,7 +29,7 @@ define([
             }
         },
         navigateTo: function() {
-            console.log('navigate to ' + this.model.get('id'));
+            app.vent.trigger('showDetails', this.model);
         }
     });
         
