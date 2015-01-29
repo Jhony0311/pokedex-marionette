@@ -3,20 +3,26 @@
 }
 
 #list {
-	background: $white;
+	// background: $white;
 	@extend .small-12;
-	@extend .medium-3;
+	@extend .medium-5;
+	@extend .large-3;
 }
 
 #details {
+	// background: $white;
 	max-height: 38.143em;
+	@extend .small-collapse;
 	@extend .small-12;
-	@extend .medium-9;
+	@extend .medium-7;
+	@extend .large-9;
 }
 
 .box {
+	// background: $white;
 	padding-top: .9375rem;
 	padding-bottom: .9375rem;
+	@extend .small-collapse;
 	@extend .columns;
 	@extend .small-12;
 }

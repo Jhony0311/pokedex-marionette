@@ -423,7 +423,7 @@ select {
   .small-11 {
     width: 91.6666666667%; }
 
-  .small-12, #list, #details, .box {
+  .small-12, #list, #details, .box, .basics, .description {
     width: 100%; }
 
   .small-offset-0 {
@@ -488,10 +488,10 @@ select {
   .column.small-uncentered.opposite, .columns.small-uncentered.opposite, .small-uncentered.opposite.box {
     float: right; }
 
-  .row.small-collapse > .column, .row.small-collapse > .columns, .row.small-collapse > .box {
+  .row.small-collapse > .column, .row#details > .column, .row.box > .column, .row.small-collapse > .columns, .row#details > .columns, .row.box > .columns, .row.small-collapse > .box, .row#details > .box, .row.box > .box {
     padding-left: 0;
     padding-right: 0; }
-  .row.small-collapse .row {
+  .row.small-collapse .row, .row#details .row, .row.box .row {
     margin-left: 0;
     margin-right: 0; }
   .row.small-uncollapse > .column, .row.small-uncollapse > .columns, .row.small-uncollapse > .box {
@@ -633,25 +633,25 @@ select {
   .medium-2 {
     width: 16.6666666667%; }
 
-  .medium-3, #list {
+  .medium-3 {
     width: 25%; }
 
   .medium-4 {
     width: 33.3333333333%; }
 
-  .medium-5 {
+  .medium-5, #list, .basics {
     width: 41.6666666667%; }
 
   .medium-6 {
     width: 50%; }
 
-  .medium-7 {
+  .medium-7, #details, .description {
     width: 58.3333333333%; }
 
   .medium-8 {
     width: 66.6666666667%; }
 
-  .medium-9, #details {
+  .medium-9 {
     width: 75%; }
 
   .medium-10 {
@@ -990,7 +990,7 @@ select {
   .large-2 {
     width: 16.6666666667%; }
 
-  .large-3 {
+  .large-3, #list {
     width: 25%; }
 
   .large-4 {
@@ -1008,7 +1008,7 @@ select {
   .large-8 {
     width: 66.6666666667%; }
 
-  .large-9 {
+  .large-9, #details {
     width: 75%; }
 
   .large-10 {
@@ -6194,9 +6194,6 @@ footer {
 .content {
   padding: 1em; }
 
-#list {
-  background: #FFFFFF; }
-
 #details {
   max-height: 38.143em; }
 
@@ -6210,9 +6207,13 @@ footer {
     width: 100%; }
 
 #complete-list {
-  max-height: 34.873em;
+  background: #FFFFFF;
+  max-height: 23.873em;
   overflow-y: auto;
   border: 1px solid #cccccc; }
+  @media only screen and (min-width:40.063em) {
+    #complete-list {
+      min-height: 23.873em; } }
   @media only screen and (min-width:64.063em) {
     #complete-list {
       min-height: 34.873em; } }
@@ -7001,3 +7002,4 @@ footer {
       top: 0.3em;
       vertical-align: middle;
       /* Refer to pokemonTypes stylesheet to color styling*/ }
+

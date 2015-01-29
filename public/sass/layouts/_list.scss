@@ -1,4 +1,4 @@
-// List stylesheet: styles for info column on layout
+// List stylesheet: styles for list column on layout
 // -------------------------------------------------------
 
 .search-box {
@@ -10,12 +10,17 @@
 }
 
 #complete-list {
-	max-height: 34.873em;
+	background: $white;
+	max-height: 23.873em;
 	overflow-y: auto;
 	border: 1px solid $light-gray;
 
+	@media #{$medium-up} {
+		min-height: 23.873em;	
+	}
+
 	@media #{$large-up} {
-		min-height: 34.873em;	
+		min-height: 34.873em;
 	}
 
 	ul {

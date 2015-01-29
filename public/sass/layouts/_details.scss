@@ -1,3 +1,14 @@
-// Details stylesheet: styles for info column on layout
+// Basic Data stylesheet: styles for info column on layout
 // -------------------------------------------------------
 
+.basics {
+	@extend .small-12;
+	@extend .medium-5;
+
+	
+}
+
+.description {
+	@extend .small-12;
+	@extend .medium-7;	
+}
