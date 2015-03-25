@@ -24,32 +24,32 @@
 // 
 // Modules stylesheets: mixins, variables and utilities 
 // -------------------------------------------------------
-@import 'modules/variables';
-@import 'modules/mixins';
-@import 'modules/texts';
-@import 'modules/sprites';
+@import "modules/variables";
+@import "modules/mixins";
+@import "modules/texts";
+@import "modules/sprites";
 
 // 
 // Vendor stylesheets: all vendor stylesheets
 // -------------------------------------------------------
-@import 'foundation';
-@import 'vendor/animate.css';
+@import "foundation";
+@import "vendor/animate.css";
 
 
 // 
 // Patterns stylesheets: group of styles and components
 // -------------------------------------------------------
-@import 'patterns/globals';
-@import 'patterns/pokemonTypes';
+@import "patterns/globals";
+@import "patterns/pokemonTypes";
 
 // 
 // Components stylesheets: is for groups of patterns with small bits of layout
 // -------------------------------------------------------
-@import 'components/generalUI';
+@import "components/generalUI";
 
 
 // 
 // Layouts stylesheets: group of patterns in a view
 // -------------------------------------------------------
-@import 'layouts/list';
-@import 'layouts/details';
+@import "layouts/list";
+@import "layouts/details";

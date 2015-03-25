@@ -10,14 +10,14 @@ module.exports = function (grunt) {
             server: {
                 options: {
                     hostname: '*',
-                    port: 9000,
+                    port: 9001,
                     base: buildConfig.app,
                 },
             }
         },
         open: {
             server: {
-                path: 'http://localhost:9000',
+                path: 'http://localhost:9001',
             }
         },
         clean: {

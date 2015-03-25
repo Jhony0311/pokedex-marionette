@@ -16,7 +16,8 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-open": "^0.2.3",
     "grunt-postcss": "^0.2.0",
-    "grunt-sass": "^0.17.0",
-    "grunt-spritesmith": "^3.5.0"
+    "grunt-sass": "^0.18.1",
+    "grunt-spritesmith": "^3.5.0",
+    "node-sass": "^2.0.1"
   }
 }

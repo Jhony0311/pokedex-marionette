@@ -2,14 +2,14 @@ define([
     'marionette',
     'handlebars',
     'text!templates/ItemListTemplate.hbs',
-    ], function (Marionette, Handlebars, template) {
-        'use strict';
+], function (Marionette, Handlebars, template) {
+    'use strict';
         
-        var view = Marionette.ItemView.extend({
-           tagName: 'li',
-           className: 'element',
-           template: Handlebars.compile(template),
-           modelEvents: {
+    var view = Marionette.ItemView.extend({
+        tagName: 'li',
+        className: 'element',
+        template: Handlebars.compile(template),
+        modelEvents: {
             'change:filter': 'onFilter',
         },
         events: {
@@ -32,6 +32,6 @@ define([
             app.vent.trigger('showDetails', this.model);
         }
     });
-        
-        return view;
-    });
+
+    return view;
+});

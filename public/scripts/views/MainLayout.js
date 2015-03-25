@@ -2,10 +2,10 @@ define([
     'marionette',
     'handlebars',
     'views/List',
-    // 'views/Details',
+    'views/Details',
     'collections/Pokemons',
     'text!templates/layoutTemplate.hbs'
-], function (Marionette, Handlebars, ListView, Pokemons, template) {
+], function (Marionette, Handlebars, ListView, DetailsView, Pokemons, template) {
     'use strict';
 
     return Marionette.LayoutView.extend({
@@ -17,6 +17,10 @@ define([
         },
         onRender: function() {
             this.getRegion('list').show(new ListView({
+                collection: Pokemons
+            }));
+
+            this.getRegion('details').show(new DetailsView({
                 collection: Pokemons
             }));
         },

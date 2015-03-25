@@ -29,7 +29,7 @@
   "dependencies": {
     "animate.css": "~3.2.0",
     "foundation": "~5.5.0",
-    "marionette": "~2.3.0",
+    "marionette": "~2.4.1",
     "handlebars": "~2.0.0",
     "requirejs": "~2.1.15",
     "text": "~2.0.13"

@@ -7,6 +7,10 @@
 	@extend .small-12;
 	@extend .medium-5;
 	@extend .large-3;
+	
+	.row {
+		background: $white;
+	}
 }
 
 #details {
